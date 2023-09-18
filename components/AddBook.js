@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { connect } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addBook } from "../features/booksSlice";
 
 const AddBook = ({ addBook }) => {
@@ -22,8 +22,4 @@ const AddBook = ({ addBook }) => {
   );
 };
 
-const mapDispatchToProps = {
-  addBook,
-};
-
-export default connect(null, mapDispatchToProps)(AddBook);
+export default AddBook;
